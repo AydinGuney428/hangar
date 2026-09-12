@@ -1,0 +1,18 @@
+{
+  "name": "security-research-hangar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A reproducible TypeScript authorization regression lab for defensive application-security engineering.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "check": "npm run build && node dist/src/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
